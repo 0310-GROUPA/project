@@ -4,10 +4,10 @@
 struct NumberNN {
     std::vector<int> arrayNum;
     int olderCoef;
-}
+};
 
-typedef NaturalNumber;
+typedef struct NumberNN NaturalNumber;
 
-NaturalNumber XtoXArray(int number);
+NaturalNumber XtoXArray(unsigned long long number);
 
-int xArrayToX(NaturalNumber exempleX);
+unsigned long long XArrayToX(NaturalNumber exempleX);
