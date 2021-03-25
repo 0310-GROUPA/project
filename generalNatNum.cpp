@@ -9,6 +9,10 @@ NaturalNumber XtoXArray(unsigned long long number) {
     NaturalNumber exempleXA;
     int olderCoefXA, remain;
     olderCoefXA = 0;
+    if (number == 0) {
+        arrayNumXA.push_back(0);
+        ++olderCoefXA;
+    }
     while (number != 0) {
         remain = number % 10;
         arrayNumXA.push_back(remain);
