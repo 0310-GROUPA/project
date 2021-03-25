@@ -4,7 +4,7 @@
 
 
 
-NaturalNumber XtoXArray(int number) {
+NaturalNumber XtoXArray(unsigned long long number) {
     std::vector<int> arrayNumXA;
     NaturalNumber exempleXA;
     int olderCoefXA, remain;
@@ -21,11 +21,14 @@ NaturalNumber XtoXArray(int number) {
     return exempleXA;
 }
 
-int xArrayToX(NaturalNumber exempleX) {
-    int number, i;
+unsigned long long XArrayToX(NaturalNumber exempleX) {
+    int i;
+    unsigned long long number, b;
     number = 0;
     for (i = 0; i < exempleX.olderCoef; ++i) {
-        number += exempleX.arrayNum[i] * std::pow(10, i);
+        b = unsigned long long(exempleX.arrayNum[i]);
+        number += exempleX.arrayNum[i] * unsigned long long(std::pow(10, i));
     }
+    number = unsigned long long(number);
     return number;
 }
