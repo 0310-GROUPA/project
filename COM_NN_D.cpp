@@ -1,8 +1,6 @@
 #include <iostream>
 #include "COM_NN_D.h"
 
-using namespace std;
-
 int COM_NN_D(NaturalNumber a, NaturalNumber b) { //a,b - массивы введенных чисел
 	int res, res2, i, razr;
 
