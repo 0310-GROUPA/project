@@ -2,7 +2,8 @@
 #include "COM_NN_D.h"
 
 int COM_NN_D(NaturalNumber a, NaturalNumber b) { //a,b - массивы введенных чисел
-	int res, res2, i, razr;
+	int i, razr;
+	unsigned long long res, res2;
 	for (i = 0, razr = 1, res = 0; i < a.olderCoef; i++) {
 		res += a.arrayNum[i] * razr;
 		razr *= 10;
