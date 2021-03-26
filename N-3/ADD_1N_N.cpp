@@ -1,15 +1,17 @@
 #include <iostream>
 #include "ADD_1N_N.h"
 
+setlocale(LC_ALL,"Rus");
+
 unsigned long long ADD_1N_N(NaturalNumber a) {
 	int i;
 	unsigned long long res, razr;
 	for (i = 0, razr = 1, res = 0; i < a.olderCoef; i++) {
 		res += (a.arrayNum[i]) * razr; 
 		razr *= 10;
-	} //ïåðåâîä ìàññèâà â ÷èñëî
-	res += 1; //Äîáàâëåíèå åäèíè÷êè
+	} //Ã¯Ã¥Ã°Ã¥Ã¢Ã®Ã¤ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã¢ Ã·Ã¨Ã±Ã«Ã®
+	res += 1; //Ã„Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¥ Ã¥Ã¤Ã¨Ã­Ã¨Ã·ÃªÃ¨
 	return res;
 }
-/*Äîáàâëåíèå 1 ê íàòóðàëüíîìó ÷èñëó
-Âûïîëíèë Ñîêîëîâ Ñåðãåé*/
+/*Ã„Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¥ 1 Ãª Ã­Ã Ã²Ã³Ã°Ã Ã«Ã¼Ã­Ã®Ã¬Ã³ Ã·Ã¨Ã±Ã«Ã³
+Ã‚Ã»Ã¯Ã®Ã«Ã­Ã¨Ã« Ã‘Ã®ÃªÃ®Ã«Ã®Ã¢ Ã‘Ã¥Ã°Ã£Ã¥Ã©*/
