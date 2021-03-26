@@ -2,9 +2,10 @@
 #include <iostream>
 #include "TRANS_N_Z.h"
 
-/*ѕреобразование натурального в целое*/
+/* Converting from a natural number to an integer */
 numberZ TRANS_N_Z(NaturalNumber number)
 {
+	/* Creating an integer structure */
 	numberZ temp;
 
 	temp.arrayNum = number.arrayNum;
@@ -13,3 +14,4 @@ numberZ TRANS_N_Z(NaturalNumber number)
 
 	return temp;
 }
+/* Created by Eric Dyakonov */ 
