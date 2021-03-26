@@ -2,7 +2,7 @@
 #include "ABS_Z_N.h"
 #include "generalNatNum.h"
 using namespace std;
-//сам модуль z1 - Абсолютная величина числа(на вход число не в виде b,a,A[...])
+/* Convertation Z to N */
 NaturalNumber ABZ_Z_N(numberZ &number)
 {
 	NaturalNumber temp;
