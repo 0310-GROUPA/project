@@ -9,3 +9,4 @@ bool NZER_N_B(NaturalNumber &number) {
 	}
 	return true;
 }
+/* Created by Eric Dyakonov */ 
