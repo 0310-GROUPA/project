@@ -1,7 +1,7 @@
 #include <iostream>
 #include "COM_NN_D.h"
 
-int COM_NN_D(NaturalNumber a, NaturalNumber b) { 
+int COM_NN_D(NaturalNumber &a, NaturalNumber &b) {
 	int i;
 	unsigned long long res, res2, razr;
 	for (i = 0, razr = 1, res = 0; i < a.olderCoef; i++) {
