@@ -13,7 +13,7 @@ int COM_NN_D(NaturalNumber a, NaturalNumber b) { //a,b - массивы введ
 	} //Перекладывание  второго массива в число
 	if (res > res2) return 2;
 	else if (res == res2) return 0;
-	else return 1;
+	else return 1; //Сравнение
 }
 /*Сравнение натуральных чисел.
 Выполнил Соколов Сергей.*/
