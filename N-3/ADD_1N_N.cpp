@@ -12,4 +12,4 @@ unsigned long long ADD_1N_N(NaturalNumber &number) {
 	return res;
 }
 /*Adding 1 to the natural number
-Completed by Sergej Sokolov*/
+Created by Sergej Sokolov*/
