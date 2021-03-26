@@ -1,10 +1,10 @@
 #include <iostream>
 #include "NZER_N_B.h"
 #include <vector>
-/*Проверка на ноль*/
+/* Checking for zero */
 bool NZER_N_B(NaturalNumber &number) {
 	if (number.arrayNum[0] == 0 && number.olderCoef == 1) {
-	/*Если первый разряд равен нулю, и размер равен 1, тогда возвращаем false*/
+	/* If the first bit is zero and the size is 1, then return false */
 		return false;
 	}
 	return true;
