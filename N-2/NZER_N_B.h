@@ -3,4 +3,4 @@
 
 
 
-bool NZER_N_B(NaturalNumber n);
+bool NZER_N_B(NaturalNumber &number);
