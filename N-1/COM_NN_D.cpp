@@ -17,4 +17,4 @@ int COM_NN_D(NaturalNumber &a, NaturalNumber &b) {
 	else return 1; //Comparison
 }
 /*Comparison of natural numbers
-Completed by Sergej Sokolov*/
+Created by Sergej Sokolov*/
