@@ -1,15 +1,24 @@
 #include <iostream>
 #include "ADD_1N_N.h"
 
-unsigned long long ADD_1N_N(NaturalNumber &number) {
-	int i;
-	unsigned long long res, razr;
-	for (i = 0, razr = 1, res = 0; i < number.olderCoef; i++) {
-		res += number.arrayNum[i] * razr;
-		razr *= 10;
-	} //converting an array to a number
-	res += 1; //adding 1
-	return res;
+NaturalNumber ADD_1N_N(NaturalNumber &number) {
+	int i,r;
+	NaturalNumber result;
+	result.arrayNum.resize(number.olderCoef);
+	result.olderCoef = number.olderCoef;
+	r = 1;
+	for (i = 0; i < number.olderCoef; ++i) {
+		result.arrayNum[i] = (number.arrayNum[i] + r) % 10;
+		r = int((number.arrayNum[i] + r) / 10);
+	}
+	if (r) {
+		result.arrayNum.resize(result.olderCoef + 1);
+		++result.olderCoef;
+		result.arrayNum[result.olderCoef - 1] = r;
+	}
+	return result;
+	
 }
+
 /*Adding 1 to the natural number
-Created by Sergej Sokolov*/
+Completed by Sergej Sokolov*/
