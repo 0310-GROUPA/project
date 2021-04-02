@@ -4,9 +4,9 @@
 int COM_NN_D(NaturalNumber& a, NaturalNumber& b) {
 	int i;
 	if (a.olderCoef > b.olderCoef) return 2;
-	else if (a.olderCoef > b.olderCoef) return 1;
+	else if (a.olderCoef < b.olderCoef) return 1;
 	else {
-		for (i = a.olderCoef - 1; i > 0; i--) {
+		for (i = a.olderCoef - 1; i >= 0; i--) {
 			if (a.arrayNum[i] > b.arrayNum[i]) return 2;
 			else if (a.arrayNum[i] < b.arrayNum[i]) return 1;
 
