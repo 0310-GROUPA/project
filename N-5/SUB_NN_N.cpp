@@ -5,27 +5,26 @@
 
 using namespace std;
 
-NaturalNumber SUB_NN_N(NaturalNumber& num1, NaturalNumber& num2) {
+NaturalNumber SUB_NN_N(NaturalNumber &num1, NaturalNumber &num2) {
 	int i, temp, resCOM;
 	int tempnum;
-	NaturalNumber result, tempS;
+	std::vector<int> tempS;
+	NaturalNumber result;
+
 	tempnum = 0;
 	result.arrayNum.resize(num1.olderCoef);
-	result.olderCoef = 0;
 	resCOM = COM_NN_D(num1, num2);
 	if (resCOM == 1) {
 		return SUB_NN_N(num2, num1);
 	}
 	else if (resCOM == 0) return XtoXArray(unsigned long long(0));
 	else {
-		tempS = num2;
-		for (i = num2.olderCoef; i < num1.olderCoef - 1; ++i) {
-			tempS.arrayNum.push_back(0);
-			tempS.olderCoef += 1;
+		tempS = num2.arrayNum;
+		for (i = num2.olderCoef; i < num1.olderCoef; ++i) {
+			tempS.push_back(0);
 		}
-
 		for (i = 0; i < num1.olderCoef - 1; i++) {
-			temp = num1.arrayNum[i] + tempnum - tempS.arrayNum[i];
+			temp = num1.arrayNum[i] + tempnum - tempS[i];
 			if (temp < 0)
 			{
 				result.arrayNum[i] = temp + 10;
@@ -36,14 +35,22 @@ NaturalNumber SUB_NN_N(NaturalNumber& num1, NaturalNumber& num2) {
 				result.arrayNum[i] = temp;
 				tempnum = 0;
 			}
-			++result.olderCoef;
 		}
-		temp = num1.arrayNum[num1.olderCoef - 1] - num2.arrayNum[num1.olderCoef - 1] + tempnum;
+		
+		temp = num1.arrayNum[num1.olderCoef - 1] - tempS[num1.olderCoef - 1] + tempnum;
 		if (temp < 0) {
 			temp = -temp;
 		}
 		result.arrayNum[num1.olderCoef - 1] = temp;
-		++result.olderCoef;
+		result.olderCoef = result.arrayNum.size();
+
+		for (i = result.olderCoef - 1; i > 0; --i) {
+			if (result.arrayNum[i] == 0) {
+				result.arrayNum.erase(result.arrayNum.begin() + i);
+				--result.olderCoef;
+			}
+			else i = 0;
+		}
 		return result;
 	}
 }
