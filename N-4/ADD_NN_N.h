@@ -4,3 +4,4 @@
 
 
 NaturalNumber ADD_NN_N(NaturalNumber& numberF, NaturalNumber& numberS);
+
