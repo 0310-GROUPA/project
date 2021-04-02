@@ -2,21 +2,26 @@
 #include <vector>
 #include "MUL_Nk_N.h"
 
-using namespace std;
 
-NaturalNumber MUL_Nk_N(NaturalNumber number,int degree) /*умножение натурального числа на 10 в степени degree*/
+NaturalNumber MUL_Nk_N(NaturalNumber number, int degree) /*СѓРјРЅРѕР¶РµРЅРёРµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРіРѕ С‡РёСЃР»Р° РЅР° 10 РІ СЃС‚РµРїРµРЅРё degree*/
 {
+
 	int i, tempCoef;
 	NaturalNumber tempStruct;
-	vector<int> temp;
-	temp = number.arrayNum;
-	tempCoef = number.olderCoef;
-	for (i = 0; i < degree; i++) {
-		temp.insert(temp.begin(), 0);
-	}
-	tempCoef += degree;
-	tempStruct.arrayNum = temp;
-	tempStruct.olderCoef = tempCoef;
-	return tempStruct;
 
+	std::vector<int> temp;
+	if ((number.olderCoef == 1) && (number.arrayNum[number.olderCoef-1] == 0)) {
+		return number;
+	}
+	else {
+		temp = number.arrayNum;
+		tempCoef = number.olderCoef;
+		for (i = 0; i < degree; i++) {
+			temp.insert(temp.begin(), 0);
+		}
+		tempCoef += degree;
+		tempStruct.arrayNum = temp;
+		tempStruct.olderCoef = tempCoef;
+		return tempStruct;
+	}
 }
