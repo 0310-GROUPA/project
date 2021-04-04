@@ -2,13 +2,18 @@
 #include <vector>
 #include "MUL_ZM_Z.h"
 
-numberZ MultiByMi1(numberZ &number) {
+numberZ MUL_ZM_Z(numberZ number) {
 	numberZ mynumber;
-	mynumber.arrayNum = number.arrayNum;
-	mynumber.olderCoef = number.olderCoef;
-	mynumber.sign = number.sign;
-	if (mynumber.sign == 1) mynumber.sign = 2;
-	else if (mynumber.sign == 2) mynumber.sign = 1;
+
+	mynumber = number;
+	if ((number.olderCoef == 1) && (number.arrayNum[number.olderCoef - 1] == 0)) return mynumber;
+	if (number.sign == 1) {
+		mynumber.sign = 0;
+	}
+	else
+	{
+		mynumber.sign = 1;
+	}
 	return mynumber;
 }
 /*Created by Alexander Kononov*/
