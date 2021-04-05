@@ -31,7 +31,6 @@ NaturalNumber SUB_NN_N(NaturalNumber &num1, NaturalNumber &num2) {
 				tempnum = -1;
 			}
 			else
-				/* ХЕЛП МИ */
 			{
 				result.arrayNum[i] = temp;
 				tempnum = 0;
