@@ -1,11 +1,12 @@
 #include <iostream>
 #include "DIV_ZZ_Z.h"
 
-
+/* The quotient of dividing a whole by an integer (divisor is nonzero) */
 numberZ DIV_ZZ_Z(numberZ& z1, numberZ& z2) {
 
 	numberZ result;
 	NaturalNumber number1N, number2N, res1;
+	/* model number1 and model number2 */
 	number1N = ABS_Z_N(z1);
 	number2N = ABS_Z_N(z2);
 	res1 = DIV_NN_N(number1N, number2N); //division of natural numbers
@@ -19,3 +20,4 @@ numberZ DIV_ZZ_Z(numberZ& z1, numberZ& z2) {
 	}
 	return result;
 }
+/* Created by Alexander Gorshenin */
