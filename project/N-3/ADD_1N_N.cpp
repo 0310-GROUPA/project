@@ -24,4 +24,4 @@ NaturalNumber ADD_1N_N(NaturalNumber number) {
 	return number;
 }
 
-/* Completed by Sergej Sokolov */
+/* Completed by Prolygin Dmitry */
