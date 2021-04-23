@@ -7,5 +7,5 @@
   Ссылка исходник для QT Creator: https://drive.google.com/drive/folders/1Hbxo1afhnmG_HPChjvwT9Y8wXL6UHLgo?usp=sharing
   
   
-UPD 1:
+UPD:
   К 30 числу будет снято ограничение на ввод на все типы числел, а также полностью будут выполненны модули для многочленов. Все модули будут протестированы.
