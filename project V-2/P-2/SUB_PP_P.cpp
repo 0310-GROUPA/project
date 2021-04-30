@@ -3,8 +3,6 @@
 
 polinom SUB_PP_P(polinom first, polinom second)
 {
-    std::cout << "size 11 " << first.olderCoef << std::endl;
-    std::cout << "size 22 " << second.olderCoef << std::endl;
     int i;
     long long int zeroI = 0;
     unsigned long long oneN = 1;
