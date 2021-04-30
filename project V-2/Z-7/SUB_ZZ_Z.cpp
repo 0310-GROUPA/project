@@ -7,22 +7,22 @@ numberZ SUB_ZZ_Z(numberZ& number1, numberZ& number2) {
 	NaturalNumber number1N, number2N;
 	numberZ result, number1ZM, number2ZM, number1MUL, number2MUL;
 	/* model number1 and model number2 */
-	number1N = ABS_Z_N(number1);
+	number1N = ABS_Z_N(number1);  //!
 	number2N = ABS_Z_N(number2);
 	/* Determining the Sign of a Number
 	(2 - positive, 0 - equal to zero, 1 - negative)*/
-	number2S = POZ_Z_D(number2);
+	number2S = POZ_Z_D(number2);  //!
 	number1S = POZ_Z_D(number1);
 	/* Checking the equal sign between two numbers.
 	'2' - the first is greater than the second.
 	'1' - the second is greater than the first.
 	'0' - are equal. */
 	/* Table: */
-	flagCOM = COM_NN_D(number1N, number2N);
+	flagCOM = COM_NN_D(number1N, number2N);  //!
 	if (flagCOM == 1) {
 		if (number1S == 1) {
-			number2MUL = MUL_ZM_Z(number2);
-			return ADD_ZZ_Z(number2MUL, number1);
+			number2MUL = MUL_ZM_Z(number2);        //!
+			return ADD_ZZ_Z(number2MUL, number1);  //!
 		}
 		else {
 			number1MUL = MUL_ZM_Z(number1);
@@ -77,4 +77,4 @@ numberZ SUB_ZZ_Z(numberZ& number1, numberZ& number2) {
 	}
 	
 }
-/* Created by Vasilev Ilya */
+/* Created by Konstantin Kerman */
