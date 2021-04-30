@@ -15,7 +15,7 @@ NaturalNumber DIV_NN_N(NaturalNumber &number1, NaturalNumber& number2) {
     '2' - the first is greater than the second.
     '1' - the second is greater than the first.
     '0' - are equal. */
-    flagCom = COM_NN_D(number1, number2);
+    flagCom = COM_NN_D(number1, number2);  //!
     /* If the second is larger than the first,
     then we call the same function with the changed values. */
     if (flagCom == 1) return DIV_NN_N(number2, number1);
@@ -33,14 +33,14 @@ NaturalNumber DIV_NN_N(NaturalNumber &number1, NaturalNumber& number2) {
         and write it down as the first number. Repeat
         until the first number is less than the second. */
         while (COM_NN_D(temp, number2) != 1) {
-            temp2 = DIV_NN_Dk(temp, number2);
-            result = ADD_NN_N(result, temp2);
+            temp2 = DIV_NN_Dk(temp, number2);      //!
+            result = ADD_NN_N(result, temp2);      //!
             if (cu >= 10) {
-                temp3 = MUL_NN_N(temp2, number2);
-                temp = SUB_NN_N(temp, temp3);
+                temp3 = MUL_NN_N(temp2, number2);  //!
+                temp = SUB_NN_N(temp, temp3);      //!
             }
             else {
-                temp = SUB_NDN_N(temp, temp2, int(cu));
+                temp = SUB_NDN_N(temp, temp2, int(cu));  //!
 
             }
         }
