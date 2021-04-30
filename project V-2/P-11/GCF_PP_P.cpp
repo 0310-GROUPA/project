@@ -23,10 +23,4 @@ polinom GCF_PP_P(polinom P1, polinom P2)
         result = polinom2;
     }
     return result;
-
-
-
-
-
-    return result;
 }
