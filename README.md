@@ -4,6 +4,6 @@
   
   Тестирование модулей представлено в папке testing.
   
-  Ссылка на программу (GoogleDrive) : https://drive.google.com/file/d/1QLcD9xOB8tUzeFOgg4gbJkGXJyWaEwIS/view?usp=sharing
+  Ссылка на программу (GoogleDrive) : https://drive.google.com/file/d/1LEgOnlWlkMv4VFBvq72Y-qXLTiSDOQbO/view?usp=sharing
 
  
