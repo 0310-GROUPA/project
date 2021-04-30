@@ -2,6 +2,6 @@
 
   Эта программа позволит вам производить операции с длинными числами раличных типов и многочленами.  Для начала работы с программой откройте папку release, затем projectDMiTI. Вы также можете ознакомиться с дополнительной информацией, открыв файл readME.txt в той же папке.
   
-  Ссылка на программу (GoogleDrive) : https://drive.google.com/file/d/1B2l2ceOVM_BRszoj-sNxSjTQOSKLNBMb/view?usp=sharing
+  Ссылка на программу (GoogleDrive) : https://drive.google.com/file/d/1QLcD9xOB8tUzeFOgg4gbJkGXJyWaEwIS/view?usp=sharing
 
  
