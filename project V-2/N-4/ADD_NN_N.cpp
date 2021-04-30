@@ -12,7 +12,7 @@ NaturalNumber ADD_NN_N(NaturalNumber& numberF, NaturalNumber& numberS) {
 	'2' - the first is greater than the second. 
 	'1' - the second is greater than the first. 
 	'0' - are equal. */
-	flag = COM_NN_D(numberF, numberS);
+	flag = COM_NN_D(numberF, numberS);  //!
 	/* If the second is larger than the first, 
 	then we call the same function with the changed values. */
 	if (flag == 1) return ADD_NN_N(numberS, numberF);
