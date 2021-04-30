@@ -16,7 +16,7 @@ NaturalNumber SUB_NN_N(NaturalNumber &num1, NaturalNumber &num2) {
 	'2' - the first is greater than the second.
 	'1' - the second is greater than the first.
 	'0' - are equal. */
-	resCOM = COM_NN_D(num1, num2);
+	resCOM = COM_NN_D(num1, num2);  //!
 	/* If the second is larger than the first,
 	then we call the same function with the changed values. */
 	if (resCOM == 1) return SUB_NN_N(num2, num1);
