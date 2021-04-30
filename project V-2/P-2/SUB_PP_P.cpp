@@ -20,7 +20,7 @@ polinom SUB_PP_P(polinom first, polinom second)
             temp.olderCoef++;
         }
         for(i=0;i<first.olderCoef+1;++i){
-            result.arrayNum[i] = SUB_QQ_Q(first.arrayNum[i], temp.arrayNum[i]);
+            result.arrayNum[i] = SUB_QQ_Q(first.arrayNum[i], temp.arrayNum[i]);  //!
             result.olderCoef++;
         }
     }else if (second.olderCoef > first.olderCoef){
