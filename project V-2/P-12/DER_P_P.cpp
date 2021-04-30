@@ -15,7 +15,7 @@ polinom DER_P_P(polinom pol)
         ++result.olderCoef;
     }else{
         for(i=pol.olderCoef;i>0;--i){
-            temp = MUL_QQ_Q(pol.arrayNum[i], XtoRArrayX(i, one));
+            temp = MUL_QQ_Q(pol.arrayNum[i], XtoRArrayX(i, one));  //!
             result.arrayNum.insert(result.arrayNum.begin(),temp);
             ++result.olderCoef;
         }
