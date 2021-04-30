@@ -11,7 +11,7 @@ numberR TRANS_Z_Q(numberZ& number)
     unsigned long long one;
 	int numberS;
     one = 1;
-	numberS = POZ_Z_D(number);
+	numberS = POZ_Z_D(number);  //!
     if (numberS == 0) return XtoRArrayX(int(0), one);
 	else {
 		result.whole = number;
