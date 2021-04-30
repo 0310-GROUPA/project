@@ -13,7 +13,7 @@ NaturalNumber MUL_NN_N(NaturalNumber& number1, NaturalNumber& number2) {
 	'2' - the first is greater than the second.
 	'1' - the second is greater than the first.
 	'0' - are equal. */
-	comResult = COM_NN_D(number1, number2);
+	comResult = COM_NN_D(number1, number2);  //!
     result = XtoXArray(zero);
 	/* If the second is larger than the first,
 	then we call the same function with the changed values. */
@@ -27,11 +27,11 @@ NaturalNumber MUL_NN_N(NaturalNumber& number1, NaturalNumber& number2) {
 			else {
 				/* Multiply the top number by the number of the 
 				bottom one under the index 'i' */
-				temp1 = MUL_ND_N(number1, number2.arrayNum[i]);
+				temp1 = MUL_ND_N(number1, number2.arrayNum[i]);  //!
 				/* Multiply by 10 ^ r, where r is the number of repetitions */
-				temp2 = MUL_Nk_N(temp1,r);
+				temp2 = MUL_Nk_N(temp1,r);  //!
 				/* Add to previous result */
-				result = ADD_NN_N(temp2, result);
+				result = ADD_NN_N(temp2, result);  //!
 				++r;
 			}
 		}
